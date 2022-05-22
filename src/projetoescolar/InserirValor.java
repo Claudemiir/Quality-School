@@ -55,6 +55,7 @@ public class InserirValor extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(760, 620));
         setMinimumSize(new java.awt.Dimension(760, 620));
         setPreferredSize(new java.awt.Dimension(760, 620));
         setResizable(false);
