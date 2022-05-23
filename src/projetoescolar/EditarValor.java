@@ -239,7 +239,7 @@ public class EditarValor extends javax.swing.JFrame {
     private void btnValoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnValoresActionPerformed
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conect = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3307/sistema","root","");
+            Connection conect = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/qualityschool","root","claudemir963");
             String sql="select * from pagamentoescolar";
            
             PreparedStatement pagamento = (PreparedStatement)conect.prepareStatement(sql);
@@ -276,7 +276,7 @@ public class EditarValor extends javax.swing.JFrame {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             
-            Connection conect = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3307/sistema","root","");
+            Connection conect = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/qualityschool","root","claudemir963");
             
             String sql= "update `pagamentoescolar` SET `nomealuno`='"+nomealuno+"',`datapagamento`='"+datapagamento+"',`valor`='"
                        +valor+"'WHERE codigopagamento ='"+codigopagamento+"'";

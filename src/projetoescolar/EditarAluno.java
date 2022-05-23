@@ -343,7 +343,7 @@ public class EditarAluno extends javax.swing.JFrame {
     
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conect = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3307/sistema","root","");
+            Connection conect = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/qualityschool","root","claudemir963");
             String sql= "update `cadastrodoestudante` SET `nomecompleto`='"+nomecompleto+"',`nomepai`='"+nomepai+"',`nomemae`='"
                        +nomemae+"',`endereco`='"+endereco+"',`datanascimento`='"+datanascimento+"',`tiposanguinio`='"+tiposanguinio+
                         "',`telefone`='"+telefone+"',`turma`='"+turma+"'WHERE id ='"+id+"'";
@@ -375,7 +375,7 @@ public class EditarAluno extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
        try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conect = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3307/sistema","root","");
+            Connection conect = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/qualityschool","root","claudemir963");
             String sql="select * from cadastrodoestudante";
            
             PreparedStatement expcaluno = (PreparedStatement)conect.prepareStatement(sql);

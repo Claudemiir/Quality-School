@@ -161,7 +161,7 @@ public class PesquisarValor extends javax.swing.JFrame {
     private void btnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPesquisarActionPerformed
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conect = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3307/sistema","root","");
+            Connection conect = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/qualityschool","root","claudemir963");
             String sql="select * from pagamentoescolar";
            
             PreparedStatement expcaluno = (PreparedStatement)conect.prepareStatement(sql);
@@ -193,7 +193,7 @@ public class PesquisarValor extends javax.swing.JFrame {
         
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conect = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3307/sistema","root","");
+            Connection conect = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/qualityschool","root","claudemir963");
             String sql="delete from `pagamentoescolar` WHERE CODIGOPAGAMENTO=" + sd;
            
             PreparedStatement expagamento = (PreparedStatement)conect.prepareStatement(sql);

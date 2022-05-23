@@ -236,7 +236,7 @@ public class InserirValor extends javax.swing.JFrame {
             
             Class.forName("com.mysql.jdbc.Driver");
             
-            Connection Conecte = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3307/sistema","root","");
+            Connection Conecte = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/qualityschool","root","claudemir963");
            
             String sql = "insert into pagamentoescolar (nomealuno, datapagamento, codigopagamento,"
                        + "valor) values(?,?,?,?)";

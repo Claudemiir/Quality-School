@@ -162,7 +162,7 @@ public class ExcluirProfessor extends javax.swing.JFrame {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             
-            Connection conect = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3307/sistema","root","");
+            Connection conect = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/qualityschool","root","claudemir963");
             
             String sql="select * from cadastroprofessor";
            
@@ -195,7 +195,7 @@ public class ExcluirProfessor extends javax.swing.JFrame {
         
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conect = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3307/sistema","root","");
+            Connection conect = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/qualityschool","root","claudemir963");
             String sql="delete from `cadastroprofessor` WHERE ID=" + sd;
            
             PreparedStatement expcaluno = (PreparedStatement)conect.prepareStatement(sql);

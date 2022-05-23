@@ -143,7 +143,7 @@ public class TelaInicial extends javax.swing.JFrame {
         
         try {
              Class.forName("com.mysql.jdbc.Driver");
-             Connection conect = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3307/sistema","root","");
+             Connection conect = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/qualityschool","root","claudemir963");
              Statement st = (Statement)conect.createStatement();
              String sql= "select * from login_usuario";
              

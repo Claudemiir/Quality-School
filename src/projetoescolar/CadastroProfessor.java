@@ -250,7 +250,7 @@ public class CadastroProfessor extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conect = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3307/sistema","root","");
+            Connection conect = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/qualityschool","root","claudemir963");
             
             String sql = "insert into cadastroprofessor (nomecompleto, datanascimento, disciplina,"
                     + "cpf, email, telefone, id, salario, estadocivil) "

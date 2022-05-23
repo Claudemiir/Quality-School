@@ -273,7 +273,7 @@ public class CadastroAluno extends javax.swing.JFrame {
     private void btnconfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnconfirmarActionPerformed
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conect = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3307/sistema","root","");
+            Connection conect = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/qualityschool","root","claudemir963");
             String sql = "insert into cadastrodoestudante (nomecompleto, nomepai, nomemae,"
                     + "endereco, datanascimento, tiposanguinio, telefone, turma, id) "
                     + "values(?,?,?,?,?,?,?,?,?)";
