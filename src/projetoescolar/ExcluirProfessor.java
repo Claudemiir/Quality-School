@@ -176,7 +176,7 @@ public class ExcluirProfessor extends javax.swing.JFrame {
             
             while(rs.next()){
             Object o[]= {rs.getString("nomecompleto"),rs.getString("datanascimento"),rs.getString("disciplina"),
-            rs.getString("cpf"),rs.getString("email"),rs.getInt("telefone"),
+            rs.getString("cpf"),rs.getString("email"),rs.getString("telefone"),
             rs.getInt("id"),rs.getString("salario"),rs.getString("estadocivil")};
             tm.addRow(o);
             }

@@ -354,6 +354,7 @@ public class EditarProfessor extends javax.swing.JFrame {
     private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
         TelaProfessor tf = new TelaProfessor();
         tf.setVisible(true);
+        dispose();
     }//GEN-LAST:event_btnCancelarActionPerformed
 
     private void btnCadastrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrosActionPerformed
@@ -374,7 +375,7 @@ public class EditarProfessor extends javax.swing.JFrame {
             
             while(rs.next()){
             Object o[]= {rs.getString("nomecompleto"),rs.getString("datanascimento"),rs.getString("disciplina"),
-            rs.getString("cpf"),rs.getString("email"),rs.getInt("telefone"),
+            rs.getString("cpf"),rs.getString("email"),rs.getString("telefone"),
             rs.getInt("id"),rs.getString("salario"),rs.getString("estadocivil")};
             tm.addRow(o);
             }

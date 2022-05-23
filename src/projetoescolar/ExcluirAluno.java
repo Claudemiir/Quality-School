@@ -191,7 +191,7 @@ public class ExcluirAluno extends javax.swing.JFrame {
             while(rs.next()){
             Object o[]= {rs.getString("nomecompleto"),rs.getString("nomepai"),rs.getString("nomemae"),
             rs.getString("endereco"),rs.getString("datanascimento"),rs.getString("tiposanguinio"),
-            rs.getInt("telefone"),rs.getString("turma"),rs.getInt("id")};
+            rs.getString("telefone"),rs.getString("turma"),rs.getInt("id")};
             tm.addRow(o);
             }
         
